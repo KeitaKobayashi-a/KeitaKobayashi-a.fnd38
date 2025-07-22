@@ -47,12 +47,12 @@ document.getElementById("form1").onsubmit = function (text) {
   let inputForm = document.getElementById("form1").userInput.value;
 
   if (inputForm === stationsFurigana[idx]) {
-    new Audio("audio/drum.mp3").play();
+    new Audio("drum.mp3").play();
     idx++;
     showStationName(idx);
     document.getElementById("userInput").value = "";
   } else {
     document.getElementById("userInput").value = "";
-    new Audio("audio/miss.mp3").play();
+    new Audio("miss.mp3").play();
   }
 };
