@@ -16,7 +16,7 @@ function goal() {
       const myform = document.getElementById("form1");
       myform.style.display = "none";
 
-      new Audio("audio/levelUp.mp3").play();
+      new Audio("levelUp.mp3").play();
 }
 
 function start() {
@@ -48,7 +48,7 @@ document.getElementById("startGame").addEventListener("keydown", (event) => {
 
 document.body.addEventListener("keydown", (press) => {
   if (press.key !== "Enter") {
-    new Audio("audio/press.mp3").play();
+    new Audio("press.mp3").play();
   }
 });
 
