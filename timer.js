@@ -38,7 +38,7 @@ const asyncGoal = async () => {
       resolve();
     }, 2000);
   });
-  new Audio("audio/levelUp.mp3").play();
+  new Audio("levelUp.mp3").play();
   [...picture].forEach((element) => {
     element.classList.add("picture");
   });
@@ -79,7 +79,7 @@ myButton.addEventListener("keydown", (e) => {
 
 document.body.addEventListener("keydown", (e) => {
   if (e.key !== "Enter") {
-    new Audio("audio/press.mp3").play();
+    new Audio("press.mp3").play();
   }
 });
 
