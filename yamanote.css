@@ -1,0 +1,122 @@
+body {
+  background-size: cover;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  margin: 5px;
+}
+h2 {
+  text-align: center;
+  margin: 5px;
+}
+
+#outer {
+  position: relative;
+  border: 20px solid rgb(35, 35, 35);
+  height: 350px;
+  width: 800px;
+  margin: auto;
+  background-color: rgba(245, 245, 245, 1);
+}
+
+#signboard {
+  font-weight: bold;
+  font-size: 90px;
+  text-align: center;
+  letter-spacing: 25px;
+}
+
+#signboardFurigana {
+  text-align: center;
+  font-size: 30px;
+}
+
+#greenLine {
+  position: absolute;
+  height: 70px;
+  background-color: green;
+  bottom: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#previousStation {
+  color: white;
+  font-size: 35px;
+  display: inline-block;
+  margin: 7px;
+}
+#nextStation {
+  color: white;
+  font-size: 35px;
+  display: inline-block;
+  margin: 7px;
+}
+
+button {
+  display: block;
+  height: 50px;
+  width: 400px;
+  margin: auto;
+  font-size: 30px;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: ridge 2px;
+}
+
+#form1 {
+  text-align: center;
+}
+
+#userInput {
+  width: 30%;
+  margin: 30px;
+  padding: 30px 15px;
+  font-size: 25px;
+  border-radius: 3px;
+  border: 2px solid #ddd;
+  box-sizing: border-box;
+  left: 20px;
+}
+
+input[type="submit"] {
+  background: transparent;
+  border: none;
+  color: transparent;
+}
+
+#time {
+  display: inline-block;
+  font-family: "Roboto Mono", monospace;
+  font-size: 50px;
+  color: rgb(232, 232, 0);
+  background-color: rgb(50, 50, 50);
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+}
+
+.img-wrap {
+  animation: img-wrap 2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes img-wrap {
+  0% {
+    clip-path: circle(0 at 50% 50%);
+    -webkit-clip-path: circle(0 at 50% 50%);
+  }
+
+  100% {
+    clip-path: circle(100% at 50% 50%);
+    -webkit-clip-path: circle(100% at 50% 50%);
+  }
+}
+
+
+#roman{
+  padding-top: 105px;
+  color: grey;
+  font-size: 30px ;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yamanote Line Typing</title>
+    <link rel="stylesheet" href="yamanote.css" />
+    <link rel="stylesheet" href="result.css" />
+  </head>
+  <body background="platfform.png">
+    <h1>山手線タイピング</h1>
+    <h2>駅名標と同じ文字をできるだけ早く、正確に入力しましょう</h2>
+
+    <div id="time">00:00</div>
+    <div id="outer">
+      <div id="signboard"></div>
+      <div id="signboardFurigana"></div>
+      <div id="greenLine">
+        <span id="previousStation"></span>
+        <span id="nextStation"></span>
+      </div>
+      <div id="roman"></div>
+    </div>
+
+    <section>
+      <img
+        src="/Users/kobayashi/Downloads/omedeto.png"
+        alt=""
+        class="none-picture"
+      />
+      <div class="none-outline"></div>
+      <img
+        src="/Users/kobayashi/Downloads/omedetou_2.png"
+        alt=""
+        class="none-picture"
+      />
+    </section>
+
+    <div>
+      <button id="startGame" autofocus>Enterキーでスタート！</button>
+    </div>
+
+    <form action="#" id="form1">
+      <input type="text" id="userInput" placeholder="駅名を入力" size="20" />
+      <input type="submit" />
+    </form>
+
+    <script type="text/javascript" src="station.js"></script>
+    <script type="text/javascript" src="timer.js"></script>
+    <script type="text/javascript" src="tokyo.js"></script>
+  </body>
+</html>
